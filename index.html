@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FinEdge | Smart Financial Planning</title>
+    <meta name="description" content="FinEdge helps you explore financial planning, investments and wealth management.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="#home" class="logo">
+                Fin<span>Edge.</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#calculator">SIP Calculator</a>
+                <a href="#investments">Investments</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"
+                        aria-label="Switch theme">🌙</button>
+
+                <button class="menu-toggle" id="menuToggle"
+                        aria-label="Toggle navigation"
+                        aria-expanded="false">☰</button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <span class="eyebrow">YOUR FINANCIAL FUTURE STARTS HERE</span>
+
+                    <h1>
+                        Make smarter decisions.
+                        <span>Build a better future.</span>
+                    </h1>
+
+                    <p>
+                        Take control of your financial journey with simple
+                        investment insights, financial planning tools and
+                        smarter wealth-building ideas.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#calculator" class="primary-button">
+                            Calculate Your SIP →
+                        </a>
+
+                        <a href="#services" class="secondary-button">
+                            Explore Services
+                        </a>
+                    </div>
+
+                    <div class="hero-note">
+                        <span class="note-dot"></span>
+                        Plan today. Grow tomorrow.
+                    </div>
+                </div>
+
+
+                <!-- ILLUSTRATIVE FINANCE CARD -->
+                <div class="hero-visual">
+
+                    <div class="finance-card">
+
+                        <div class="card-top">
+                            <div>
+                                <span class="muted-text">Illustrative portfolio</span>
+                                <h3>Investment Overview</h3>
+                            </div>
+
+                            <span class="card-icon">↗</span>
+                        </div>
+
+                        <div class="portfolio-value">
+                            ₹12,50,000
+                        </div>
+
+                        <span class="positive-text">
+                            Sample portfolio value
+                        </span>
+
+                        <div class="chart">
+                            <svg viewBox="0 0 500 190"
+                                 role="img"
+                                 aria-label="Illustrative rising investment chart">
+
+                                <defs>
+                                    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#16a36b" stop-opacity=".25"/>
+                                        <stop offset="100%" stop-color="#16a36b" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+
+                                <path d="M0 155 L55 135 L105 145 L160 95 L215 115 L270 70 L325 88 L380 45 L435 55 L500 12 L500 190 L0 190 Z"
+                                      fill="url(#chartFill)"/>
+
+                                <path d="M0 155 L55 135 L105 145 L160 95 L215 115 L270 70 L325 88 L380 45 L435 55 L500 12"
+                                      fill="none"
+                                      stroke="#159b70"
+                                      stroke-width="4"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <div class="chart-labels">
+                            <span>Jan</span>
+                            <span>Mar</span>
+                            <span>May</span>
+                            <span>Jul</span>
+                            <span>Sep</span>
+                            <span>Dec</span>
+                        </div>
+
+                        <div class="card-footer">
+                            <span>Long-term investment illustration</span>
+                            <span>↗</span>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card">
+                        <span>Smart planning</span>
+                        <strong>Start with a goal</strong>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- STATISTICS -->
+        <section class="stats-section">
+            <div class="container stats-grid">
+
+                <div class="stat-box">
+                    <h2 data-target="100" data-suffix="+">0</h2>
+                    <p>Financial resources</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2 data-target="25" data-suffix="+">0</h2>
+                    <p>Planning tools</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2 data-target="10" data-suffix="+">0</h2>
+                    <p>Investment topics</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2 data-target="24" data-suffix="/7">0</h2>
+                    <p>Learn at your pace</p>
+                </div>
+
+            </div>
+            <p class="sample-note">Illustrative website statistics, not verified business figures.</p>
+        </section>
+
+
+        <!-- SERVICES -->
+        <section class="section services" id="services">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">WHAT WE OFFER</span>
+                    <h2>Financial tools for <span>every goal.</span></h2>
+                    <p>Explore useful concepts and tools to support your financial planning.</p>
+                </div>
+
+                <div class="service-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3>Financial Planning</h3>
+                        <p>Understand your income, expenses, savings and financial goals.</p>
+                        <a href="#calculator">Explore more →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">📈</div>
+                        <h3>Investment Insights</h3>
+                        <p>Learn about different investment choices and their risks.</p>
+                        <a href="#investments">Explore more →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">💰</div>
+                        <h3>SIP Calculator</h3>
+                        <p>Estimate the possible future value of regular monthly investments.</p>
+                        <a href="#calculator">Calculate now →</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SIP CALCULATOR -->
+        <section class="section calculator" id="calculator">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">SMART FINANCIAL TOOL</span>
+                    <h2>Calculate your <span>SIP returns.</span></h2>
+                    <p>Change the values below to estimate a possible investment outcome.</p>
+                </div>
+
+                <div class="calculator-content">
+
+                    <div class="calculator-inputs">
+
+                        <label for="monthlyInvestment">Monthly investment (₹)</label>
+                        <input type="number" id="monthlyInvestment"
+                               value="5000" min="1">
+
+                        <label for="annualReturn">Expected annual return (%)</label>
+                        <input type="number" id="annualReturn"
+                               value="12" min="0" max="100" step="0.1">
+
+                        <label for="investmentYears">Investment period (years)</label>
+                        <input type="number" id="investmentYears"
+                               value="10" min="1" max="50">
+
+                        <button id="calculateSIP" class="primary-button">
+                            Calculate Returns →
+                        </button>
+
+                        <p id="calculatorError" class="error-message" aria-live="polite"></p>
+
+                    </div>
+
+                    <div class="calculator-results">
+
+                        <div class="result-item">
+                            <span>Total investment</span>
+                            <h3 id="totalInvestment">₹0</h3>
+                        </div>
+
+                        <div class="result-item">
+                            <span>Estimated returns</span>
+                            <h3 id="estimatedReturns">₹0</h3>
+                        </div>
+
+                        <div class="result-item future-result">
+                            <span>Estimated future value</span>
+                            <h2 id="futureValue">₹0</h2>
+                        </div>
+
+                        <p class="calculator-disclaimer">
+                            This is an estimate based on an assumed return.
+                            Mutual fund returns are market-linked and not guaranteed.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- INVESTMENT OPTIONS -->
+        <section class="section investments" id="investments">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">EXPLORE OPPORTUNITIES</span>
+                    <h2>Explore investment <span>options.</span></h2>
+                    <p>Understand the features and risks of different investment categories.</p>
+                </div>
+
+                <div class="investment-grid">
+
+                    <article class="investment-item">
+                        <div class="investment-icon">📉</div>
+                        <h3>Mutual Funds</h3>
+                        <p>Investment funds that pool money from multiple investors.</p>
+                    </article>
+
+                    <article class="investment-item">
+                        <div class="investment-icon">🏢</div>
+                        <h3>Stocks</h3>
+                        <p>Shares representing ownership in publicly listed companies.</p>
+                    </article>
+
+                    <article class="investment-item">
+                        <div class="investment-icon">🏦</div>
+                        <h3>Fixed Deposits</h3>
+                        <p>Bank deposits offering a fixed interest rate for a chosen period.</p>
+                    </article>
+
+                    <article class="investment-item">
+                        <div class="investment-icon">🪙</div>
+                        <h3>Gold</h3>
+                        <p>A traditional asset used by some investors for diversification.</p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="section about" id="about">
+            <div class="container about-grid">
+
+                <div class="about-visual">
+                    <div class="about-symbol">F</div>
+                    <div class="about-small-card">
+                        <span>Think long term</span>
+                        <strong>Invest with knowledge.</strong>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="eyebrow">ABOUT FINEDGE</span>
+
+                    <h2>Helping you understand <span>your money.</span></h2>
+
+                    <p>
+                        FinEdge is a finance-focused educational website
+                        designed to make financial concepts easier to understand.
+                    </p>
+
+                    <p>
+                        Explore investment categories, use simple financial
+                        calculators and learn the importance of planning
+                        before making financial decisions.
+                    </p>
+
+                    <a href="#contact" class="primary-button">
+                        Connect with us →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section contact" id="contact">
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <span class="eyebrow">GET IN TOUCH</span>
+
+                    <h2>Let's build a <span>better financial future.</span></h2>
+
+                    <p>
+                        Have a question or suggestion? Send us a message.
+                    </p>
+
+                    <form id="contactForm" class="contact-form">
+
+                        <input type="text" id="contactName"
+                               placeholder="Your name" required>
+
+                        <input type="email" id="contactEmail"
+                               placeholder="Your email address" required>
+
+                        <textarea id="contactMessage"
+                                  placeholder="Write your message"
+                                  required></textarea>
+
+                        <button type="submit" class="white-button">
+                            Send Message →
+                        </button>
+
+                        <p id="formMessage" aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="#home" class="logo footer-logo">
+                Fin<span>Edge.</span>
+            </a>
+
+            <p>
+                © <span id="currentYear"></span> FinEdge.
+                All rights reserved.
+            </p>
+
+            <a href="#home" class="back-to-top">Back to top ↑</a>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

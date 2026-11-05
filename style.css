@@ -1,0 +1,866 @@
+/* =========================
+   1. BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #17251f;
+    line-height: 1.6;
+}
+
+:root {
+    --green: #159b70;
+    --dark: #173c30;
+    --light-green: #eaf6f0;
+    --gray: #68766f;
+    --light-gray: #f7f9f8;
+}
+
+.container {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+
+/* =========================
+   2. NAVIGATION BAR
+========================= */
+
+.navbar {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #edf0ee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    gap: 7px;
+}
+
+.logo-icon {
+    background: var(--green);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.dot {
+    color: var(--green);
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: var(--gray);
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--green);
+}
+
+.nav-button {
+    background: var(--dark);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+    background: var(--green);
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   3. HERO SECTION
+========================= */
+
+.hero {
+    padding: 100px 0;
+    background: linear-gradient(
+        120deg,
+        #ffffff 60%,
+        #eff8f3 100%
+    );
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--light-green);
+    color: var(--green);
+    padding: 9px 14px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.green-circle {
+    width: 8px;
+    height: 8px;
+    background: var(--green);
+    border-radius: 50%;
+}
+
+.hero-text h1 {
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.15;
+    letter-spacing: -2px;
+    margin: 25px 0;
+    font-weight: 800;
+}
+
+.hero-text h1 span,
+.section-heading h2 span,
+.investment-text h2 span,
+.about-text h2 span,
+.contact-box h2 span {
+    color: var(--green);
+}
+
+.hero-text > p {
+    color: var(--gray);
+    font-size: 15px;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.primary-button {
+    background: var(--dark);
+    color: white;
+    padding: 15px 23px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.secondary-button {
+    border: 1px solid #dce5df;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.secondary-button:hover {
+    background: var(--light-green);
+}
+
+.trust {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.avatars {
+    display: flex;
+}
+
+.avatars span {
+    width: 35px;
+    height: 35px;
+    background: #d7eee3;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: -7px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.avatars span:first-child {
+    margin-left: 0;
+}
+
+.trust strong,
+.trust small {
+    display: block;
+    font-size: 11px;
+}
+
+.trust small {
+    color: var(--gray);
+}
+
+
+/* =========================
+   4. FINANCE CARD
+========================= */
+
+.hero-visual {
+    position: relative;
+    padding: 20px;
+}
+
+.finance-card {
+    background: white;
+    border: 1px solid #edf1ee;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(30, 70, 50, 0.08);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-top small,
+.card-footer small {
+    color: var(--gray);
+    font-size: 10px;
+}
+
+.card-top h3 {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.status {
+    font-size: 10px;
+    color: var(--green);
+    background: var(--light-green);
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+.amount {
+    font-size: 35px;
+    font-weight: 800;
+    margin-top: 25px;
+}
+
+.growth {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.growth span {
+    color: var(--gray);
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.chart {
+    width: 100%;
+    height: 170px;
+    margin-top: 25px;
+}
+
+.chart svg {
+    width: 100%;
+    height: 100%;
+}
+
+.chart-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--gray);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #edf0ee;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.card-footer strong {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: -15px;
+    left: -10px;
+    background: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.09);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.floating-card > span {
+    background: var(--light-green);
+    color: var(--green);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.floating-card strong,
+.floating-card small {
+    display: block;
+    font-size: 11px;
+}
+
+.floating-card small {
+    color: var(--gray);
+}
+
+
+/* =========================
+   5. STATISTICS
+========================= */
+
+.stats {
+    background: var(--dark);
+    padding: 45px 0 25px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.stat-box h2 {
+    font-size: 32px;
+    color: white;
+}
+
+.stat-box p {
+    color: #bdcec5;
+    font-size: 12px;
+}
+
+.sample-note {
+    color: #bdcec5;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+
+/* =========================
+   6. SERVICES
+========================= */
+
+.services {
+    background: white;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.eyebrow {
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-heading h2,
+.investment-text h2,
+.about-text h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 15px 0;
+    letter-spacing: -1px;
+}
+
+.section-heading p,
+.investment-text p,
+.about-text p {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 35px 28px;
+    border: 1px solid #e9efeb;
+    border-radius: 13px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(20, 60, 40, 0.08);
+}
+
+.service-card.featured {
+    background: var(--light-green);
+    border-color: var(--light-green);
+}
+
+.service-icon {
+    background: var(--light-green);
+    color: var(--green);
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+.service-card h3 {
+    margin: 25px 0 10px;
+    font-size: 18px;
+}
+
+.service-card p {
+    color: var(--gray);
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.service-card a {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   7. INVESTMENTS
+========================= */
+
+.investments {
+    background: var(--light-gray);
+}
+
+.investment-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.investment-text p {
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.investment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.investment-item {
+    background: white;
+    border: 1px solid #edf0ee;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: 0.3s;
+}
+
+.investment-item:hover {
+    border-color: var(--green);
+    transform: translateX(5px);
+}
+
+.investment-symbol {
+    width: 48px;
+    height: 48px;
+    background: var(--light-green);
+    color: var(--green);
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    font-size: 23px;
+}
+
+.investment-item h3 {
+    font-size: 15px;
+}
+
+.investment-item p {
+    font-size: 11px;
+    color: var(--gray);
+}
+
+.arrow {
+    margin-left: auto;
+    color: var(--green);
+    font-size: 20px;
+}
+
+
+/* =========================
+   8. ABOUT SECTION
+========================= */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-image-box {
+    min-height: 380px;
+    border-radius: 18px;
+    padding: 45px;
+    background: linear-gradient(135deg, #dff3e8, #b5dfc8);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-image-box > span {
+    color: var(--green);
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.about-image-box h2 {
+    font-size: 43px;
+    line-height: 1.2;
+    margin-top: 40px;
+    color: var(--dark);
+    position: relative;
+    z-index: 2;
+}
+
+.image-decoration {
+    position: absolute;
+    right: -10px;
+    bottom: -80px;
+    font-size: 260px;
+    color: rgba(21, 155, 112, 0.15);
+}
+
+.about-text p {
+    margin: 20px 0;
+}
+
+.about-text ul {
+    list-style: none;
+}
+
+.about-text li {
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   9. CONTACT SECTION
+========================= */
+
+.contact {
+    padding-top: 30px;
+}
+
+.contact-box {
+    text-align: center;
+    background: var(--dark);
+    border-radius: 20px;
+    padding: 75px 25px;
+    color: white;
+}
+
+.contact-box .eyebrow {
+    color: #8ee0b8;
+}
+
+.contact-box h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.contact-box h2 span {
+    color: #8ee0b8;
+}
+
+.contact-box p {
+    color: #bdcec5;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.white-button {
+    background: white;
+    color: var(--dark);
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.white-button:hover {
+    background: #8ee0b8;
+}
+
+
+/* =========================
+   10. FOOTER
+========================= */
+
+.footer {
+    padding: 55px 0 20px;
+    background: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.footer-content p {
+    color: var(--gray);
+    font-size: 12px;
+    max-width: 300px;
+    margin-top: 15px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: var(--gray);
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    color: var(--green);
+}
+
+.copyright {
+    border-top: 1px solid #edf0ee;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.copyright p {
+    font-size: 10px;
+    color: var(--gray);
+}
+
+
+/* =========================
+   11. RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .investment-layout,
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 91%;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .nav-content {
+        height: 70px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .nav-button {
+        padding: 10px 13px;
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero-content {
+        gap: 45px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text > p {
+        font-size: 13px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .finance-card {
+        padding: 20px;
+    }
+
+    .amount {
+        font-size: 28px;
+    }
+
+    .floating-card {
+        left: 0;
+        bottom: -35px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 10px;
+    }
+
+    .stat-box h2 {
+        font-size: 26px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2,
+    .investment-text h2,
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    .investment-item {
+        padding: 15px;
+    }
+
+    .about-image-box {
+        min-height: 320px;
+        padding: 30px;
+    }
+
+    .about-image-box h2 {
+        font-size: 35px;
+    }
+
+    .contact-box {
+        padding: 55px 18px;
+    }
+
+    .contact-box h2 {
+        font-size: 30px;
+    }
+
+    .footer-content,
+    .copyright {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+}
